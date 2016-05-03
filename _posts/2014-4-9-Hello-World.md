@@ -4,7 +4,7 @@ title: Co je Virtuální realita?
 ---
 
 Virtuální realita (VR) (nebo virtuální prostředí) je technologie umožňující uživateli interagovat se simulovaným prostředím. Technologie virtuální reality vytvářejí iluzi skutečného světa (např. při výcviku boje, pilotování, lékařství), nebo fiktivního světa počítačových her.
-Jde o vytváření vizuálního zážitku zobrazovaného na obrazovce počítače, speciální audiovizuální helmy, popř. oblečení snímající pohyb a stimulující hmat.sadf
+Jde o vytváření vizuálního zážitku zobrazovaného na obrazovce počítače, speciální audiovizuální helmy, popř. oblečení snímající pohyb a stimulující hmat.
 
 ## Princip používání VR
 
