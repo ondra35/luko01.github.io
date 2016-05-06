@@ -57,7 +57,7 @@ permalink: /:title/
 permalink: /:Lukas/
 permalink: /:Barca/
 permalink: /:Ondrej/
-permalink: /:Index/
+permalink: /:default/
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
