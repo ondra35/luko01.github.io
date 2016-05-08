@@ -1,0 +1,393 @@
+---
+layout: Clanek1-prezentace-zarizeni
+permalink: /Clanek1-prezentace-zarizeni/
+---
+
+
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html lang="cs" class="ie7 no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="cs" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="cs" class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang = "cs" class = "no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+
+.sidebar{
+    position: absolute;         
+    right: 0;
+    top: 100px
+    }
+    
+    
+.sidebar div {
+    background: #fff; 
+        width: 350px;
+        height: 600px;
+   margin-right: 50px;
+    margin-top: 70px;
+    }
+    
+ .podobne {
+    counter-reset: podobne;
+    margin-bottom: 40px;
+}
+.podobne-item {
+    color: #000;
+    display: block;
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 20px 0;
+    min-height: 48px;
+    padding-left: 60px;
+    position: relative;
+    text-decoration: none;
+}
+.podobne-item-author {
+    color: #9f9f9f;
+    font-size: 13px;
+}
+.podobne-item::before {
+    border: 1px solid #e3e3e3;
+    border-radius: 100px;
+    color: #dbdbdb;
+    content: counter(podobne, decimal);
+    counter-increment: podobne;
+    font-size: 40px;
+    font-style: normal;
+    opacity: 
+    height: 48px;
+    left: 0;
+    line-height: 46px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 48px;
+}
+.podobne-item:hover::before {
+    background:   linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    border: none;
+    color: #fff;
+}   
+
+    
+
+    
+svg:not(:root) {
+    overflow: hidden;
+}
+embed, iframe, img, object {
+    vertical-align: left;
+}
+
+
+
+.reset > li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+
+body {
+    font: 400 16px/24px "Source Sans Pro",Arial,Helvetica,sans-serif;
+}
+caption, h1, h2, h3, h4, h5, h6 {
+    font-family: Danzza,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 1.5em 0 0.75em;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+ caption, h3 {
+    font-size: 16px;
+}
+h4, h5, h6 {
+    font-size: 14px;
+}
+
+hr {
+   
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    height: 1px;
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: color 1s ease 0s;
+}
+a:hover {
+    color: #898989;
+}
+ol, ul {
+    list-style: outside none none;
+    margin: 0 0 1.75em;
+    padding: 0;
+}
+
+
+    .row-main {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+
+
+
+
+#header .bg {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #dedede;
+    height: 59px;
+    overflow: hidden;
+    position: relative;
+    visibility: visible;
+}
+#logo {
+    font: 400 100%/1 "Source Sans Pro",Arial,Helvetica,sans-serif;
+    margin-top: 22px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+    
+    #logo2 {
+    font:"Source Sans Pro",Arial,Helvetica,sans-serif;
+        font-size: 30px;
+    margin-top: 22px;
+        margin-bottom: 82px;
+    position: relative;
+    text-align: center;
+}
+
+    
+
+
+#horni-listap .menu {
+    font-family: Danzza,sans-serif;
+    font-size: 14px;
+    left: 60px;
+    line-height: 57px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    z-index: 101;
+}
+#horni-listap .menu li {
+    float: left;
+}
+#horni-listap .menu a {
+    color: #000;
+    display: block;
+    padding: 2px 5px 0;
+    position: relative;
+    transition: background 0.2s ease 0s;
+}
+#horni-listap .menu a::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 5px;
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+    transition: opacity 0.2s ease 0s;
+}
+
+#horni-listap .menu a.open::after, #horni-listap .menu a:hover::after {
+    opacity: 1;
+}
+
+
+
+#horni-listap .box {
+    background: #fff none repeat scroll 0 0;
+    font-size: 13px;
+    left: 0;
+    letter-spacing: 0.1em;
+    line-height: 19px;
+    opacity: 0;
+    padding: 20px 20px 5px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 0;
+    transition: opacity 0.5s ease 0s;
+}
+.ie8 #horni-listap .box {
+    display: none;
+}
+#horni-listap .box.open {
+    opacity: 1;
+    z-index: 10;
+}
+.ie8 #horni-listap .box.open {
+    display: block;
+}
+
+.textonas {
+   background: #fff none repeat scroll 0 0;
+    width:58%;
+    float: left;
+   font-style: monospace,serif;
+   margin-top: 40px;
+    margin-bottom: 20px ;
+    text-align: justify;
+  
+    
+  } 
+    
+    
+</style>
+</head>
+
+</head>
+
+  <div class="static-page-loader"></div>
+
+ 
+      <div id="header">
+          <div class="bg">
+  
+              <h1 id="logo">
+                Virtuální realita
+            </h1>
+              
+        </div>
+        
+     
+            
+          </div>
+        </div>
+      </div>
+
+
+
+<div class="sidebar">
+<div id="sidebar">
+
+<div class="podobne">
+<h2 class="podobne-title">Podobné články</h2>
+<a class="podobne-item" href="...">
+Playstation a X-box
+<br>
+<span class="podobne-item-author"> Ondřej Mitrík </span>
+</a>
+<a class="podobne-item" href="/tydenik/2016/18/jak-nas-vytrolil-ovcacek">
+Nahlédnutí do minulosti
+<br>
+<span class="podobne-item-author"> Lukáš Konečný </span>
+</a>
+<a class="podobne-item" href="/tydenik/2016/16/branili-jsme-hrad">
+Nahlédnutí do budoucnosti
+<br>
+<span class="podobne-item-author"> Barča Fukárková </span>
+</a>
+
+</div>
+
+    </div>
+    </div>
+
+  <div id = "main">
+      
+         
+        <div class="row-main">
+        <div class="box-carousel">
+                      
+
+                 
+            <div class="textonas">
+                 <h1 id="logo2"> Prezentace zařízení na trhu </h1> 
+                
+                <p> V tomhle článku se pokusím zabývat virtuální technologií. Virtuální technologie je taková technologie, která se snaží ošálit naše smysly tak, abychom nepoznali rozdíl mezi realitou vymyšleným světem. Toto bylo v minulosti součástí především sci-fi příběhů. Ovšem čas se v technologiích strašně rychle mění a to, co dřív byl jen pouhý sci-fi příběh se stává realitou. Co je všechno díky naši technologií možné? Jaké dnes máme prostředky, které nám pomáhají zvýšit pocit z virtuální reality? Jak se bude pravděpodobně vyvíjet technologie virtuální reality? To se pokusím aspoň trošku nastínit v mém článku, kde se zaměřím především na aktuální možnosti, které nám současnost nabízí. </p>
+<p> Začnu trošku z historie. Virtuální realita se datuje cca kolem roku 1950, kdy přichází vynález nazvaný Sensorama. Jedná se o stroj podobný hracímu automatu. Dokázal promítnout filmy se zvukem a s vůní. Dále se pak technologie a pohled na virtuální realitu zlepšoval s příchodem 3D brýlí a 5D kin. Aktuálně se nejvíce mluví o tzv. headsetech. Což je přístroj, který se nasadí na hlavu a zprostředkovává člověku virtuální realitu. Obsahuje akcelerometr (přístroj měřící zrychlení), gyroskop (pohyblivé čidlo, které dokáže detekovat pohyb a náklon hlavy a nějaký systém na zobrazení virtuálního světa. Zkusím vám v krátkosti představit pár z nich. </p>
+<h3>HTC Vive </h3>
+                <p class="img">
+<img width="580" height="350" src="http://www.battleforce.cz/wp-content/uploads/2016/02/HTC-Vive_White.jpg" alt="">
+</p>
+<p> Je produktem dvou firem HTC a Valve (vytvořilo např. Steam).  Jsou to plastové brýle, které zprostředkovávají virtuální realitu. Obsahují laserové senzory, které detekují paprsky, které vysílají 2 vysílače, které jsou umístěny v místnosti. Je však zapotřebí trošku větší prostor. Dále obsahuje vstupy  pro USB, aby se mohl zapojit do počítače. Součástí jsou i dva ovladače, které mají různé funkce a snímají pohyby ruky. Jejími hlavní předností je, že uživatel jen nesedí, ale hýbe se a jeho pohyb je snímaný a převedený do obrazu virtuální reality. Paprsky vycházející z vysílačů jsou schopny detekovat stoly, stěny a různé jiné překážky v místnosti. Zorné pole je 113 stupňů. Oficiální cena je 899.00 €, což je cca 25 000Kč. Oficiální vydání produktu bylo 5. 4. 2016. K nám by mělo dojít v červnu. </p>
+<h3> OCulus rift </h3>
+<p> Je produkt od firmy Oculus VR, který odkoupila společnost Facebook. I zde se jedná o plastové brýle, které zprostředkovávají virtuální realitu. Využívá dvojici OLED displejů a obsahuje nastavitelná sluchátka, které se dají odmontovat, a obsahuje integrovaný mikrofon. K zapojení je potřeba velmi kvalitní počítač, jeho přesná specifika jsou vypsána na stránkách Oculusu. Existuje i program, co dokáže sám určit, jestli je Oculus pro danou sestavu vhodný. Zorné pole je 96 stupňů. Hlavní předností je oproti konkurenci vykreslování obrazu, který je na velmi dobré úrovni. Momentálně pro Oculus Rift je určeno 36 her. Vyvíjí se i ovladač pro Oculus pod názvem Oculus touch. Oculusu je často vyčítána jeho platformová uzavřenost. Orientační cena je kolem 19 000kč. Oculus rift by k nám měl dojít v srpnu.</p>
+                
+  <p class="img">
+    <img src="https://dbvc4uanumi2d.cloudfront.net/cdn/4.5.24/wp-content/themes/oculus/img/order/dk2-product.jpg" border="0" alt="I"></a>	
+</p>
+            
+ <h3> GearVR </h3>
+<p> Je produkt firmy Samsung Electronics, která spoluprácuje s firmou Oculus. Jedná se o brýle, které zprostředkovávají virtuální realitu přes mobilní telefony typu Samsung galaxy S6, s7 nebo Note 5 pomocí microUSB. Využívá  Super AMOLED displeje. Obsahuje touchpad, který se nachází na pravé části brýli společně s tlačítkem na úpravu hlasitosti. Zorné pole je 95 stupńů. Vydání produktu vyšlo 27. listopadu 2015. Jeho cena je okolo 3 500kč </p>
+<p> Těchto zařízení je vyvíjeno momentálně velmi mnoho můžu zmínit ještě Razer OSVR, jehož hlavní předností je, že je Open Source. Dále Morpheus, což je VR pro playstation, Google Cardboard (kartonová levná verze pro mobilní VR) a existuje mnoho dalších přístrojů. Kromě samotné VR existuje tzv. rozšířená realita. Na rozdíl již od výše zmíněných produktů produkty s rozšířenou realitou neztrácí úplný kontakt s reálným světem.  Měli by se zaměřovat především na pomoc našemu běžnému životu. Uvedu pár příkladů. </p>
+            
+    <p class="img">
+<img width="580" height="350" src="http://www.samsung.com/us/explore/gear-vr/assets/images/desktop/GearVR_Hero_Gold.png" alt="">
+</p>         
+            
+<h3> HoloLens </h3>
+<p> Produkt od firmy Microsoft. Co že to vlastně je? Viděli jste film Avatar? Jak tam vědci mají holografickou mapu či jiné 3d věci,  které si různě natáčejí nebo označují. Tak to je ono. Hololens jsou brýle, které vám dokáží při nasazení promítnout obraz kdekoliv. Oproti např. Oculusu, ale neztrácíte ponětí o realitě. Můžete hrát svou oblíbenou hru, dívat se na film programovat 3d aplikace, telefonovat a mnoho dalšího třeba na vašich dveřích. Jak to funguje? Brýle jsou jako takový minipočítač s vlastním procesorem, grafickou jednotkou a speciální holografickou jednotku, která je vlastně tajnou technologií, která zprostředkovává 3D vidění, vaše gesta a ukládá např. záznamy z videokamery nebo fotoaparátu. Zařízení má pět kamer, dva optické senzory. Měli by fungovat na systému Windows 10. Neměli by být potřeba žádné kabely či dráty, vše by mělo jet na baterku jako notebook. Momentálně tento produkt je ve stavu stálého vyvíjení a zdokonalování, ale měl by vyjít v nejbližší době. Přesné datum není uvedeno.</p>
+            
+            <p class="img">
+<img width="580" height="350" src="https://www.petri.com/wp-content/uploads/2016/01/h169-1.jpg" alt="">
+</p>         
+            
+<h3> Google glass </h3>
+<p> Určitě znáte filmy o agentech, které mají speciální brýle, co dokáží při pohledu na člověka vypsat jeho věk, jméno apod. Tímto směrem se vydal Google se svými Google glass. Tyto brýle místo klasických optických čoček obsahují průhledový displej (head-up displey). Obsahuje kameru, která je umístěna na horním pravé části brýlí a tauchpad, který je umístěn v pravé části z boku. Systém, na kterém běží, je android. Dále obsahuje Wi-Fi, uložiště dat, bluetoot. Brýle se dají ovládat pomocí hlasu (příkazů) nebo tauchpadem. Co vše dokáže? Tyto brýle umí nahrávat na kameru, fotit, vyhledávat informace z internetu, pouštět film, zjišťování teploty okolí, najít polohu v mapách a mnoho dalšího. Jsou pro něj neustále vyvíjeny aplikace. Jejich první verzí byl Explorer, který sloužil především k testování. Fáze testování přinesla výsledky a momentálně se vyvíjí druhá verze těchto brýlí, která by opravila připomínky testerů, které byli např. bolest očí, nízká kapacita baterky, zvýraznění nahrávání… </p>
+            
+            <p class="img">
+<img width="580" height="350" src="http://www4.pcmag.com/media/images/423989-google-glass.jpg?thumb=y" alt="">
+</p>         
+            
+<p> Dalšími podobnými produkty jsou např. Meta 2, Epson Moverio BT-300 (údajně nejlehčí brýle na trhu) a jiné... 
+Jak jde vidět, virtuální realita se technologicky posunula velkým směrem dopředu. Zajisté se tyto technologie budou zdokonalovat a rozšířená realita s virtuální se začnou navzájem překrývat.  Můžeme očekávat, že již během pár let dáme sbohem televizím, protože si prostě film promítneme v brýlích na zdi. Naší technologií dokážeme oklamat zrak, sluch a dokážeme přenést i svůj pohyb. Co ještě chybí? Myslím, že dalším smyslem bude čich, kdy  si koupíme přístroj tzv.  „čmuchátor“ a při koupi nějaké hry, dostaneme lahvičky s různými vůněmi, které nám přístroj bude různě vypouštět podle prostředí, kde se budeme ve hře zrovna nacházet.
+Virtuální realita je momentálně velký fenomén, který co do technologií se rychle vyvíjí, a v budoucnu nás čekají velké posuny směrem k virtuální realitě. </p>      
+            <p class="img">
+<img width="580" height="350" src="http://images.fonearena.com/blog/wp-content/uploads/2016/02/epson-moverio-BT-300.jpg" alt="">
+</p>         
+                 
+            
+ </div>					
+	
+</div> 	      
+               
+</div>
+
+     
+
+  <div id="horni-listap"> 
+<ul class="reset menu">
+<li class=""><a href="#men" class="has-submenu">About</a></li> <li class="">
+<a href="index.html.html" class="has-submenu">Blog</a></li>
+    <li class=""><a href="Ondrej.html" class="has-submenu">Ondřej</a></li> <li class="">
+    <li class=""><a href="Barca.html" class="has-submenu">Barča</a></li> <li class="">
+    <li class=""><a href="Lukas.html" class="has-submenu">Lukáš</a></li> <li class="">
+  
+    </div>
+
+  
+
+
+</body>
+</html>
