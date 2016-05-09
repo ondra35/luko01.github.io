@@ -32,6 +32,7 @@ permalink: /Clanek1-prezentace-zarizeni/
  .podobne {
     counter-reset: podobne;
     margin-bottom: 40px;
+    position: fixed;
 }
 .podobne-item {
     color: #000;
@@ -297,12 +298,12 @@ Playstation a X-box
 <br>
 <span class="podobne-item-author"> Ondřej Mitrík </span>
 </a>
-<a class="podobne-item" href="/tydenik/2016/18/jak-nas-vytrolil-ovcacek">
+<a class="podobne-item" href="...">
 Nahlédnutí do minulosti
 <br>
 <span class="podobne-item-author"> Lukáš Konečný </span>
 </a>
-<a class="podobne-item" href="/tydenik/2016/16/branili-jsme-hrad">
+<a class="podobne-item" href="...">
 Nahlédnutí do budoucnosti
 <br>
 <span class="podobne-item-author"> Barča Fukárková </span>
@@ -378,7 +379,7 @@ Virtuální realita je momentálně velký fenomén, který co do technologií s
 
   <div id="horni-listap"> 
 <ul class="reset menu">
-<li class=""><a href="#men" class="has-submenu">About</a></li> <li class="">
+<li class=""><a href="{{ site.baseurl }}/about">About</a></li> <li class="">
 <a href="{{ site.baseurl }}/default">Blog</a></li>
     <li class=""><a href="{{ site.baseurl }}/Ondrej">Ondřej</a></li> <li class="">
     <li class=""><a href="{{ site.baseurl }}/Barca">Barča</a></li> <li class="">
