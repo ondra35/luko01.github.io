@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html lang="cs" class="ie7 no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="cs" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="cs" class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang = "cs" class = "no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+
+.sidebar{
+    position: absolute;         
+    right: 0;
+ 
+    }
+    
+    
+.sidebar div {
+    background: #fff; 
+        width: 350px;
+        height: 400px;
+   margin-right: 50px;
+    margin-top: 20px;
+    }
+    
+ .podobne {
+    counter-reset: podobne;
+    margin-bottom: 40px;
+     position: fixed;
+}
+.podobne-item {
+    color: #000;
+    display: block;
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 20px 0;
+    min-height: 48px;
+    padding-left: 60px;
+    position: relative;
+    text-decoration: none;
+}
+.podobne-item-author {
+    color: #9f9f9f;
+    font-size: 13px;
+}
+.podobne-item::before {
+    border: 1px solid #e3e3e3;
+    border-radius: 100px;
+    color: #dbdbdb;
+    content: counter(podobne, decimal);
+    counter-increment: podobne;
+    font-size: 40px;
+    font-style: normal;
+    opacity: 
+    height: 48px;
+    left: 0;
+    line-height: 46px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 48px;
+}
+.podobne-item:hover::before {
+    background:   linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    border: none;
+    color: #fff;
+}   
+
+
+    
+svg:not(:root) {
+    overflow: hidden;
+}
+embed, iframe, img, object {
+    vertical-align: left;
+    padding: 20px;
+}
+
+
+
+.reset > li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+    .textalignuspanu {
+
+   text-align: left;
+}
+
+    
+body {
+    font: 400 16px/24px "Source Sans Pro",Arial,Helvetica,sans-serif;
+}
+caption, h1, h2, h3, h4, h5, h6 {
+    font-family: Danzza,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 1.5em 0 0.75em;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.25em;
+    text-align: left;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+ caption, h3 {
+    font-size: 16px;
+}
+h4, h5, h6 {
+    font-size: 14px;
+}
+
+hr {
+   
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    height: 1px;
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: color 1s ease 0s;
+}
+a:hover {
+    color: #898989;
+}
+ol, ul, li {
+ 
+    margin: 0 0 1.75em;
+    padding: 0;
+    color: transparent;
+}
+
+
+    .row-main {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+
+
+
+
+#header .bg {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #dedede;
+    height: 59px;
+    overflow: hidden;
+    position: relative;
+    visibility: visible;
+}
+#logo {
+    font: 400 100%/1 "Source Sans Pro",Arial,Helvetica,sans-serif;
+    margin-top: 22px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+    
+    #logo2 {
+    font:"Source Sans Pro",Arial,Helvetica,sans-serif;
+        font-size: 30px;
+    margin-top: 22px;
+        margin-bottom: 82px;
+    position: relative;
+    text-align: center;
+}
+
+    
+
+
+#horni-listap .menu {
+    font-family: Danzza,sans-serif;
+    font-size: 14px;
+    left: 60px;
+    line-height: 57px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    z-index: 101;
+}
+#horni-listap .menu li {
+    float: left;
+}
+#horni-listap .menu a {
+    color: #000;
+    display: block;
+    padding: 2px 5px 0;
+    position: relative;
+    transition: background 0.2s ease 0s;
+}
+#horni-listap .menu a::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 5px;
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+    transition: opacity 0.2s ease 0s;
+}
+
+#horni-listap .menu a.open::after, #horni-listap .menu a:hover::after {
+    opacity: 1;
+}
+
+
+
+#horni-listap .box {
+    background: #fff none repeat scroll 0 0;
+    font-size: 13px;
+    left: 0;
+    letter-spacing: 0.1em;
+    line-height: 19px;
+    opacity: 0;
+    padding: 20px 20px 5px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 0;
+    transition: opacity 0.5s ease 0s;
+}
+.ie8 #horni-listap .box {
+    display: none;
+}
+#horni-listap .box.open {
+    opacity: 1;
+    z-index: 10;
+}
+.ie8 #horni-listap .box.open {
+    display: block;
+}
+
+.textonas {
+   background: #fff none repeat scroll 0 0;
+    width:58%;
+    float: left;
+   font-style: monospace,serif;
+   margin-top: 40px;
+    margin-bottom: 20px ;
+    text-align: justify;
+  
+    
+  } 
+    
+    
+</style>
+</head>
+
+</head>
+
+  <div class="static-page-loader"></div>
+
+ 
+      <div id="header">
+          <div class="bg">
+  
+              <h1 id="logo">
+                Virtuální realita
+            </h1>
+              
+        </div>
+        
+     
+            
+          </div>
+        </div>
+      </div>
+
+
+
+<div class="sidebar">
+<div id="sidebar">
+
+<div class="podobne">
+<h2 class="podobne-title">Nejčtenější</h2>
+<a class="podobne-item" href="{{ site.baseurl }}/Clanek1-prezentace-zarizeni">
+Prezentace zařízení na trhu
+
+<br>
+<span class="podobne-item-author"> Ondřej Mitrík </span>
+</a>
+<a class="podobne-item" href="...">
+Dopady na lidskou psychiku
+<br>
+<span class="podobne-item-author"> Barča Fukárková </span>
+</a>
+<a class="podobne-item" href="...">
+Nahlédnutí do budoucnosti
+<br>
+<span class="podobne-item-author"> Barča Fukárková </span>
+</a>
+    <a class="podobne-item" href="...">
+Seznamte se - tohle je virtuální realita
+<br>
+<span class="podobne-item-author"> Lukáš Konečný </span>
+</a>
+    <a class="podobne-item" href="...">
+Playstation a X-box
+<br>
+<span class="podobne-item-author"> Ondřej Mitrík </span>
+</a>
+
+</div>
+
+    </div>
+    </div>
+
+  <div id = "main">
+      
+         
+        <div class="row-main">
+        <div class="box-carousel">
+                      
+
+                 
+            <div class="textonas">
+                 <h1 id="logo2"> Co od nás můžete očekávat ? </h1> 
+                
+                  
+
+<p> Vybrali jsme si téma virtuální realita nejen počítačových hrách a to včetně výhod i a hrozeb, které s ní souvisí. Budeme rozebírat i okolnosti, jako historii, či vidiny budoucnosti.
+
+<p> Jelikož se virtuální realita již dostala na obchodní trh, vzniká řada otázek, jaké výhody by mohla přinést hernímu průmyslu.
+                Současně, ale také vznikají obavy, které mohou vzejít s jejím používáním. Rád bych tedy vysvětlil na stránkách,
+                co to vlastně virtuální realita je, jakým směrem se vyvíjí a jaké hrozby může přinést (Od odloučení od reality po bolesti hlavy konče). </p>
+
+<h2> Popis projektu </h2>
+
+<h3> 1. Cílová skupina </h3>
+
+<p> Naše cílová skupina se bude pohybovat okolo lidí, kteří jsou zainteresováni do počítačových her, konkrétněji tedy spíše mladší věkový okruh, přibližně 15-28 let. Nicméně se zde
+                zcela jistě najdou i mladší a starší čtenáři, tudíž, ženy, muži a děti od 0 do 122... nezoufejte!</p>
+
+<h3> 2. Cíl webu </h3>
+
+<p>Protože máme všichni vlastní zkušenosti z oblasti, nebudeme blogovat jen o teorii, ale i praxi a zahrneme vlastní aspekty na toto téma.
+    Rádi bychom čtenáře seznámili s tímto trendem, seznámili je jak s našimi názory, tak i světovými, ale také je varovali, co se může stát, pokud propadnou příliš velké vášni. 
+
+<h3> 3. Název webu </h3>
+
+<p> Virtuální realita 
+<p> (Stručné, jasné, úderné) 
+
+<h3> 4. Webové zdroje </h3>
+                
+<li style="color: #666699">
+      <span style="color: #000">
+          <a href="http://vtm.e15.cz/z-virtualni-reality-vam-asi-bude-spatne" >Problémy s používáním virtuální reality</a>
+          
+          <li style="color: #0099FF">
+      <span style="color: #000">
+
+           <a href="http://www.svethardware.cz/virtualni-realita" >Rubriky těch nejzajímavějších článků o VR</a>
+          
+          <li style="color: #666699">
+      <span style="color: #000">
+                    
+  <a href="https://www.alza.cz/gaming/virtualni-realita/18856436.html" >Dostupná zařízení a cenové relace</a>
+      
+          
+          <li style="color: #0099FF">
+      <span style="color: #000">
+            
+    <a href="https://www.youtube.com/watch?v=lEu-IGaucM4" >Domácí výroba brýlí</a>
+          
+          <li style="color: #666699">
+      <span style="color: #000">
+          
+          
+          <a href="http://www.oculus.com" >Oficiální stránky Oculusu </a>
+
+          
+          <li style="color: #0099FF">
+      <span style="color: #000">          
+                 
+      
+      <a href="http://www.wareable.com/headgear/the-best-ar-and-vr-headsets" >Srovnání zařízení pro virtuální realitu </a>
+
+          
+          <li style="color: #666699">
+      <span style="color: #000">
+          
+                <a href="](http://electronics.howstuffworks.com/gadgets/other-gadgets/virtual-reality.htm)" >Jak funguje virtuální realita? </a>
+
+          
+          </span>
+    </li>
+  </ul>
+
+<h3> 5. Newebové zdroje </h3>
+                
+      <ul> 
+    <li style="color: #0099FF">
+      <span style="color: #000">
+
+  AUKSTAKALNIS, Steve a David BLATNER. Reálně o virtuální realitě: umění a věda virtuální reality. Brno: Jota, 1994. Nové obzory. ISBN 80-85617-41-2. 
+           <li style="color: #666699">
+      <span style="color: #000">
+          
+  GÖRNER, Tomáš a Petr HOŘEJŠÍ. Virtuální realita. 1. vyd. Plzeň: SmartMotion, 2011. Klastr mechatronika. ISBN 978-80-87539-02-6.
+         <li style="color: #0099FF ">
+      <span style="color: #000">
+          
+  VÁGNER, Ivan. Svět postmoderních her. Vyd.1. Jinočany: H & H, 1995. ISBN 80-85787-75-X
+         <li style="color: #666699 ">
+      <span style="color: #000">
+          
+          
+BOWEN, David a Joe ELLIOT. Multimédia: podrobný průvodce: [virtuální realita, trojrozměrné hry, Internet, World Wide Web, CD-ROM a informační superdálnice. 1. čes. vyd. Praha: Albatros, 1997. ISBN 80-00-00528-X.</li>
+<li style="color: #0099FF">
+      <span style="color: #000">
+             
+             KŘEJPSKÝ, Marek a Marek NAVRÁTIL. Human Factors in Virtual Reality. In Fourth Spring Research Conference of the Faculty of Engineering (SRCFE 99). (UK) Bristol: Univeristy of Bristol, 1999. s. 27-29.</li>
+
+           </span>
+    </li>
+  </ul>
+                
+<h3> 6. Videa a obrázky (odkazy) </h3>
+    
+  <div class="textalignuspanu"
+               
+   <li style="color: #666699">
+      <span style="color: #000"
+             >            
+
+ Cyberith Virtualizer + Oculus Rift + Virtual Reality Games Compilation
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/OsmdD6OIcdg" frameborder="0" allowfullscreen></iframe>
+          
+  <li style="color: #0099FF">
+      <span style="color: #000">   
+          
+ 25 Upcoming Oculus Rift Games In 2016 / 2017
+          
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8dVVcLch1_Q" frameborder="0" allowfullscreen></iframe>
+          
+  <li style="color: #666699">
+      <span style="color: #000"> 
+          
+Virtual reality games are not so great 
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fQ0JTkBZdyw" frameborder="0" allowfullscreen></iframe>
+          
+          <li style="color: #0099FF">
+      <span style="color: #000">          
+
+          Top 10 Virtual Reality Games
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/g5Q8JoSx_vI" frameborder="0" allowfullscreen></iframe>
+          
+            <li style="color: #666699">
+      <span style="color: #000">  
+          
+          5 Coolest Virtual Reality Gadgets You Must Have
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ng-wZnDq65Q" frameborder="0" allowfullscreen></iframe>
+          
+          
+           <li style="color: #0099FF">
+      <span style="color: #000">  
+          
+Gaming Virtual Reality: Near-Future or Next-Gen?
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Bk3zNzDgE3c" frameborder="0" allowfullscreen></iframe>
+
+          </span>
+    </li>
+  </ul>
+          </div>
+
+
+<h3> 7. Základní obsah k tématu </h3>
+              
+          <li style="color: #666699">
+      <span style="color: #000"> 
+
+ Zařízení + cenové relace  
+          
+                     <li style="color: #0099FF">
+      <span style="color: #000">  
+          
+ Bázi, na jakých tyto technologie fungují a propojují se
+          
+                     <li style="color:  #666699">
+      <span style="color: #000">  
+          
+Tematická videa s vlastním komentářem
+          
+                     <li style="color: #0099FF">
+      <span style="color: #000">  
+          
+ Seznam her, které stojí za to si zahrát ve VR
+          
+                     <li style="color:  #666699">
+      <span style="color: #000">  
+          
+Výhody a nevýhody VR v PC hrách
+                     <li style="color: #0099FF">
+      <span style="color: #000">  
+          
+ Dopady na lidskou psychologii 
+                     <li style="color:  #666699">
+      <span style="color: #000">  
+          
+Hry, které vyjdou v roce 2016/ 2017 + očekávání
+                     <li style="color: #0099FF">
+      <span style="color: #000">  
+          
+Playstation a Xbox
+                     <li style="color:  #666699">
+      <span style="color: #000">   
+          
+ Nahlédnutí do historie (i minulých představ o budoucnosti a jejich naplnění)
+          
+                     <li style="color: #0099FF">
+      <span style="color: #000">  
+          
+ Předpoklady v budoucnosti
+                     <li style="color:  #666699">
+      <span style="color: #000">  
+          
+ Pornografie ve virtuální realitě
+          
+                     <li style="color: #0099FF">
+      <span style="color: #000">  
+          
+ Návod jak si vytvořit vlastní brýle 
+          
+           </span>
+    </li>
+  </ul>
+
+<h3> 8. Strategii zveřejňování obsahu </h3>
+
+Dobré by bylo začít úvodním článkem o VR v počítačových hrách a seznámit s tím tak čtenáře. V dalších bodech představit zařízení, nějakou historii, dát nějaké varování (vše není tak růžové, jak se zdá) a poté seznamovat s detaily, jednotlivými hrami atd. Nakonec ukázat nějaké možnosti, se kterými bychom se mohli teoreticky setkat v budoucnosti.  Jak už bylo zmíněno, bylo by dobré veškeré zveřejněné články dokládat o vlastní posudek a názor (Na konci každého článku by bylo vyjádření všech účastníků na projektu).
+
+<h3> 9. Statistika návštěvnosti blogu </h3>
+                         
+                         
+</p>         
+                 
+            
+ </div>					
+	
+</div> 	      
+               
+</div>
+
+                         
+                         
+     
+
+  <div id="horni-listap"> 
+<ul class="reset menu">
+<li class=""><a href="#men" class="has-submenu">About</a></li> <li class="">
+<a href="{{ site.baseurl }}/default">Blog</a></li>
+    <li class=""><a href="{{ site.baseurl }}/Ondrej">Ondřej</a></li> <li class="">
+    <li class=""><a href="{{ site.baseurl }}/Barca">Barča</a></li> <li class="">
+    <li class=""><a href="{{ site.baseurl }}/Lukas">Lukáš</a></li> <li class="">
+  
+    
+    
+    </div>
+
+  
+
+
+</body>
+</html>
