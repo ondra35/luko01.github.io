@@ -59,6 +59,7 @@ permalink: /:Barca/
 permalink: /:Ondrej/
 permalink: /:default/
 permalink: /:Clanek1-prezentace-zarizeni/
+permalink: /About/
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
