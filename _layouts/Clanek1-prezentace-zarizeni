@@ -14,7 +14,7 @@
 .sidebar{
     position: absolute;         
     right: 0;
-    top: 100px
+   
     }
     
     
@@ -29,6 +29,7 @@
  .podobne {
     counter-reset: podobne;
     margin-bottom: 40px;
+    position: fixed;
 }
 .podobne-item {
     color: #000;
@@ -375,7 +376,7 @@ Virtuální realita je momentálně velký fenomén, který co do technologií s
 
   <div id="horni-listap"> 
 <ul class="reset menu">
-<li class=""><a href="#men" class="has-submenu">About</a></li> <li class="">
+<li class=""><a href="{{ site.baseurl }}/about">About</a></li> <li class="">
 <a href="{{ site.baseurl }}/default">Blog</a></li>
     <li class=""><a href="{{ site.baseurl }}/Ondrej">Ondřej</a></li> <li class="">
     <li class=""><a href="{{ site.baseurl }}/Barca">Barča</a></li> <li class="">
