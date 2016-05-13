@@ -68,6 +68,8 @@ svg:not(:root) {
 }
 embed, iframe, img, object {
     vertical-align: middle;
+    padding:10px;
+    background-color: white;
 }
 
 .reset > li {
