@@ -61,6 +61,7 @@ permalink: /:default/
 permalink: /:Clanek1-prezentace-zarizeni/
 permalink: /:about/
 permalink: /:seznamtese/
+permalink: /:vyhodynevyhody/
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
