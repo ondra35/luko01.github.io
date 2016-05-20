@@ -1,0 +1,414 @@
+---
+layout: Clanek1-prezentace-zarizeni
+permalink: /vyhodynevyhody/
+---
+
+
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html lang="cs" class="ie7 no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="cs" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="cs" class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang = "cs" class = "no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+
+.sidebar{
+    position: absolute;         
+    right: 0;
+    top: 100px
+    }
+    
+    
+.sidebar div {
+    background: #fff; 
+        width: 350px;
+        height: 600px;
+   margin-right: 50px;
+    margin-top: 70px;
+    }
+    
+ .podobne {
+    counter-reset: podobne;
+    margin-bottom: 40px;
+}
+.podobne-item {
+    color: #000;
+    display: block;
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 20px 0;
+    min-height: 48px;
+    padding-left: 60px;
+    position: relative;
+    text-decoration: none;
+}
+.podobne-item-author {
+    color: #9f9f9f;
+    font-size: 13px;
+}
+.podobne-item::before {
+    border: 1px solid #e3e3e3;
+    border-radius: 100px;
+    color: #dbdbdb;
+    content: counter(podobne, decimal);
+    counter-increment: podobne;
+    font-size: 40px;
+    font-style: normal;
+    opacity: 
+    height: 48px;
+    left: 0;
+    line-height: 46px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 48px;
+}
+.podobne-item:hover::before {
+    background:   linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    border: none;
+    color: #fff;
+}   
+
+    
+
+    
+svg:not(:root) {
+    overflow: hidden;
+}
+embed, iframe, img, object {
+    vertical-align: left;
+}
+
+
+
+.reset > li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+
+body {
+    font: 400 16px/24px "Source Sans Pro",Arial,Helvetica,sans-serif;
+}
+caption, h1, h2, h3, h4, h5, h6 {
+    font-family: Danzza,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 1.5em 0 0.75em;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+ caption, h3 {
+    font-size: 16px;
+}
+h4, h5, h6 {
+    font-size: 14px;
+}
+
+hr {
+   
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    height: 1px;
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: color 1s ease 0s;
+}
+a:hover {
+    color: #898989;
+}
+ol, ul {
+    list-style: outside none none;
+    margin: 0 0 1.75em;
+    padding: 0;
+}
+
+
+    .row-main {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+
+
+
+
+#header .bg {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #dedede;
+    height: 59px;
+    overflow: hidden;
+    position: relative;
+    visibility: visible;
+}
+#logo {
+    font: 400 100%/1 "Source Sans Pro",Arial,Helvetica,sans-serif;
+    margin-top: 22px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+    
+    #logo2 {
+    font:"Source Sans Pro",Arial,Helvetica,sans-serif;
+        font-size: 30px;
+    margin-top: 22px;
+        margin-bottom: 82px;
+    position: relative;
+    text-align: center;
+}
+
+    
+
+
+#horni-listap .menu {
+    font-family: Danzza,sans-serif;
+    font-size: 14px;
+    left: 60px;
+    line-height: 57px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    z-index: 101;
+}
+#horni-listap .menu li {
+    float: left;
+}
+#horni-listap .menu a {
+    color: #000;
+    display: block;
+    padding: 2px 5px 0;
+    position: relative;
+    transition: background 0.2s ease 0s;
+}
+#horni-listap .menu a::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 5px;
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+    transition: opacity 0.2s ease 0s;
+}
+
+#horni-listap .menu a.open::after, #horni-listap .menu a:hover::after {
+    opacity: 1;
+}
+
+
+
+#horni-listap .box {
+    background: #fff none repeat scroll 0 0;
+    font-size: 13px;
+    left: 0;
+    letter-spacing: 0.1em;
+    line-height: 19px;
+    opacity: 0;
+    padding: 20px 20px 5px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 0;
+    transition: opacity 0.5s ease 0s;
+}
+.ie8 #horni-listap .box {
+    display: none;
+}
+#horni-listap .box.open {
+    opacity: 1;
+    z-index: 10;
+}
+.ie8 #horni-listap .box.open {
+    display: block;
+}
+
+.textonas {
+   background: #fff none repeat scroll 0 0;
+    width:58%;
+    float: left;
+   font-style: monospace,serif;
+   margin-top: 40px;
+    margin-bottom: 20px ;
+    text-align: justify;
+  
+    
+  }
+
+    .zarovnanitextu-span
+    {text-align: left
+        }
+    
+    
+</style>
+</head>
+
+</head>
+
+  <div class="static-page-loader"></div>
+
+ 
+      <div id="header">
+          <div class="bg">
+  
+              <h1 id="logo">
+                Virtuální realita
+            </h1>
+              
+        </div>
+        
+     
+            
+          </div>
+        </div>
+      </div>
+
+
+
+<div class="sidebar">
+<div id="sidebar">
+
+<div class="podobne">
+<h2 class="podobne-title">Podobné články</h2>
+<a class="podobne-item" href="{{ site.baseurl }}/Clanek1-prezentace-zarizeni">
+Prezentace zařízení na trhu
+<br>
+<span class="podobne-item-author"> Ondřej Mitrík </span>
+</a>
+<a class="podobne-item" href="">
+Nahlédnutí do minulosti
+<br>
+<span class="podobne-item-author"> Lukáš Konečný </span>
+</a>
+<a class="podobne-item" href="">
+Nahlédnutí do budoucnosti
+<br>
+<span class="podobne-item-author"> Barča Fukárková </span>
+</a>
+
+</div>
+
+    </div>
+    </div>
+
+  <div id = "main">
+      
+         
+        <div class="row-main">
+        <div class="box-carousel">
+                      
+
+                 
+            <div class="textonas">
+                 <h1 id="logo2"> Výhody a nevýhody virtuální reality v počítačových hrách </h1> 
+                               <h4> Autor: Lukáš Konečný </h4> 
+
+                <p> Už jste pohlceni pozlátkem VR? Nebo pořád váháte a stavíte se k tomuto tématu velmi skepticky a nedůvěřivě? Ač tak nebo onak, v tomto článku se Vám pokusím blíže představit výhody a nevýhody VR v PC hrách, bude to spíš můj osobní pohled na věc, takže rozhodně žádné převelké technické věci nečekejte. 
+</p>
+	<img src="{{ site.baseurl }}/images/motyl.jpg" alt=""> 
+	
+	
+                <p> Vždy se má začít pozitivně a proto ani nezačnu jinak. Virtuální realita s sebou nese neskutečné možnosti nejen v herním průmyslu, ale také v dalších odvětvích jako je například zdravotnictví. My se však budeme držet herního tématu. V nynější době počítačové hry vypadají vcelku obyčejně, jsme si vědomi že hrajeme hru, sedíme v pohodlné židli a unášíme se příběhem. Avšak každý hráč určitě jednou pomyslel na to, jaké by to bylo se vcítit do těla jeho hrdiny, popřípadně hrdinky, a nést hrdě svůj meč s cílem zabít nějakou tu potvoru. A právě toto VR umožňuje, díky ní se nám herní požitek několikanásobně zvětší. S nástupem moderních technologií si tedy budeme moci vychutnávat pohledy z hor do široké krajiny, lézt na obtížné výstupy, plavat v oceánech a to všechno u nás doma. Avšak není to jen vizuální zážitek, budeme totiž moct prožít věci, které jsme si vždy chtěli zkusit, avšak nikdy jsme k tomu nenašli odvahu. Společně s různýma vychytávkama se můžeme dokonce i pohybovat, běžet, kopat a právě tyto věci podtrhují budoucnost hraní. Vše na co si vzpomenete, tak můžete prožít ve vašem obýváku.
+
+                </p>
+                
+                	<img src="{{ site.baseurl }}/images/oculus.png" alt=""> 
+                	
+                	
+                <p> Nuže dobrá probrali jsme si nehlavnější výhody VR, ale jsou tu i stinné stránky, které by rozhodně neměli být opomíjeny. Začnu ze zdravotního hlediska, při testování virtuální reality se prokázalo, že někteří lidé mohou trpět bolestmi hlavy, pocity zvracení a celkové nevolnosti. Už jen z tohoto hlediska by se dalo říct, že VR rozhodně nebude pro každého. Další negativní aspekt, který může s využíváním této technologie přijít, je ta, že se člověk na ní stane závislý. Přeci jen závislost na počítačových hrách existuje již nyní a to se dá ještě bezpečně rozlišit, co je a co není skutečnost. A co se teprve stane, až si nasadíme ony brýle, připneme si další vymoženosti na sebe a připojíme se do herního světa? Budeme žít nový život v novém těle, nové osobnosti a právě tam vyvstává hrozba, že začneme špatně rozlišovat realitu od té počítačové, budeme stále více a více závislí a náš společenský život pomalu zanikne. 
+</p>
+                <p> Představme si tu situaci, že se VR dostane do každé domácnosti, skoro každý bude chtít žít svůj vlastní virtuální život a postupně se takto přesune i ekonomika, která poskytne další pohodlí těmto lidem. Lidská společnost si na to postupně zvykne a zároveň i zanikne tak jak ji známe dnes. 
+
+                </p>
+                
+                	<img src="{{ site.baseurl }}/images/ustolu.png" alt=""> 
+                	
+                	
+                <p> Ale dost bylo o tom, jak je možné snadno spadnout do nevědomosti, která realita je ta skutečná. Další nevýhodou této technologie je v dnešní době cena a hardwarové nároky, které často znamenají další peníze, aby jste si mohli upgradovat své vlastní herní sestavy. 
+                </p>
+                
+                 <h3> Verdikt </h3>
+                
+            
+<p> Jistě VR realita přináší jisté výhody do herního průmyslu a nové zážitky, které v minulých letech nebyly prakticky ani možné, ale musíme mít na paměti, že hranice závislosti se znovu může posunout na kritickou hranici, která může ohrozit naše osobní životy. 
+Sám se tedy stavím k používání VR velice skepticky a opatrně, ale jsem velmi zvědav na další pokrok v této technologii.
+</p>
+
+                <h3> Použité zdroje </h3>
+                
+                <div class="zarovnanitextu-span"> 
+                
+<p>  <li style="color: #666699">
+      <span style="color: #000"> 
+          myartse.com [online]. 21.12.2012 [cit. 2016-05-18]. Dostupné z: http://www.myartse.com/vyhody-a-nevyhody-virtualni-reality/ </p>
+
+          
+     <p>    <li style="color: #0099FF">
+      <span style="color: #000">  
+          
+wikipedia.org [online]. 16. 5. 2016 [cit. 2016-05-18]. Dostupné z: https://cs.wikipedia.org/wiki/Virtu%C3%A1ln%C3%AD_realita </p> 
+
+            <li style="color: #666699">
+      <span style="color: #000"> 
+
+<p> www.svethardware.cz. [online]. [cit. 2016-05-18]. Dostupné z: http://www.svethardware.cz/virtualni-realita/ </p> 
+          
+         
+          </span>
+    </li>
+  </ul>
+
+                </p>   
+                
+                
+          
+            
+ </div>					
+	
+</div> 	      
+               
+</div>
+
+     
+
+  <div id="horni-listap"> 
+<ul class="reset menu">
+<li class=""><a href="{{ site.baseurl }}/about">About</a></li> <li class="">
+<a href="{{ site.baseurl }}/default">Blog</a></li>
+    <li class=""><a href="{{ site.baseurl }}/Ondrej">Ondřej</a></li> <li class="">
+    <li class=""><a href="{{ site.baseurl }}/Barca">Barča</a></li> <li class="">
+    <li class=""><a href="{{ site.baseurl }}/Lukas">Lukáš</a></li> <li class="">
+  
+    </div>
+
+  
+
+
+</body>
+</html>
