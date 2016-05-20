@@ -64,7 +64,7 @@ permalink: /:seznamtese/
 permalink: /:vyhodynevyhody/
 permalink: /:tematickavidea/
 permalink: /:seznamtese/
-permalini: /:dopady/
+permalink: /:dopady/
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
