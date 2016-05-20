@@ -1,0 +1,396 @@
+---
+layout: Clanek1-prezentace-zarizeni
+permalink: /dopady/
+---
+
+
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html lang="cs" class="ie7 no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="cs" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="cs" class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang = "cs" class = "no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+
+.sidebar{
+    position: absolute;         
+    right: 0;
+    top: 100px
+    }
+    
+    
+.sidebar div {
+    background: #fff; 
+        width: 350px;
+        height: 600px;
+   margin-right: 50px;
+    margin-top: 70px;
+    }
+    
+ .podobne {
+    counter-reset: podobne;
+    margin-bottom: 40px;
+}
+.podobne-item {
+    color: #000;
+    display: block;
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 20px 0;
+    min-height: 48px;
+    padding-left: 60px;
+    position: relative;
+    text-decoration: none;
+}
+.podobne-item-author {
+    color: #9f9f9f;
+    font-size: 13px;
+}
+.podobne-item::before {
+    border: 1px solid #e3e3e3;
+    border-radius: 100px;
+    color: #dbdbdb;
+    content: counter(podobne, decimal);
+    counter-increment: podobne;
+    font-size: 40px;
+    font-style: normal;
+    opacity: 
+    height: 48px;
+    left: 0;
+    line-height: 46px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 48px;
+}
+.podobne-item:hover::before {
+    background:   linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    border: none;
+    color: #fff;
+}   
+
+    
+
+    
+svg:not(:root) {
+    overflow: hidden;
+}
+embed, iframe, img, object {
+    vertical-align: left;
+}
+
+
+
+.reset > li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+
+body {
+    font: 400 16px/24px "Source Sans Pro",Arial,Helvetica,sans-serif;
+}
+caption, h1, h2, h3, h4, h5, h6 {
+    font-family: Danzza,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 1.5em 0 0.75em;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+ caption, h3 {
+    font-size: 16px;
+}
+h4, h5, h6 {
+    font-size: 14px;
+}
+
+hr {
+   
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    height: 1px;
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: color 1s ease 0s;
+}
+a:hover {
+    color: #898989;
+}
+ol, ul {
+    list-style: outside none none;
+    margin: 0 0 1.75em;
+    padding: 0;
+}
+
+
+    .row-main {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+
+
+
+
+#header .bg {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #dedede;
+    height: 59px;
+    overflow: hidden;
+    position: relative;
+    visibility: visible;
+}
+#logo {
+    font: 400 100%/1 "Source Sans Pro",Arial,Helvetica,sans-serif;
+    margin-top: 22px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+    
+    #logo2 {
+    font:"Source Sans Pro",Arial,Helvetica,sans-serif;
+        font-size: 30px;
+    margin-top: 22px;
+        margin-bottom: 82px;
+    position: relative;
+    text-align: center;
+}
+
+    
+
+
+#horni-listap .menu {
+    font-family: Danzza,sans-serif;
+    font-size: 14px;
+    left: 60px;
+    line-height: 57px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    z-index: 101;
+}
+#horni-listap .menu li {
+    float: left;
+}
+#horni-listap .menu a {
+    color: #000;
+    display: block;
+    padding: 2px 5px 0;
+    position: relative;
+    transition: background 0.2s ease 0s;
+}
+#horni-listap .menu a::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 5px;
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+    transition: opacity 0.2s ease 0s;
+}
+
+#horni-listap .menu a.open::after, #horni-listap .menu a:hover::after {
+    opacity: 1;
+}
+
+
+
+#horni-listap .box {
+    background: #fff none repeat scroll 0 0;
+    font-size: 13px;
+    left: 0;
+    letter-spacing: 0.1em;
+    line-height: 19px;
+    opacity: 0;
+    padding: 20px 20px 5px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 0;
+    transition: opacity 0.5s ease 0s;
+}
+.ie8 #horni-listap .box {
+    display: none;
+}
+#horni-listap .box.open {
+    opacity: 1;
+    z-index: 10;
+}
+.ie8 #horni-listap .box.open {
+    display: block;
+}
+
+.textonas {
+   background: #fff none repeat scroll 0 0;
+    width:58%;
+    float: left;
+   font-style: monospace,serif;
+   margin-top: 40px;
+    margin-bottom: 20px ;
+    text-align: justify;
+  
+    
+  } 
+    
+    
+</style>
+</head>
+
+</head>
+
+  <div class="static-page-loader"></div>
+
+ 
+      <div id="header">
+          <div class="bg">
+  
+              <h1 id="logo">
+                Virtuální realita
+            </h1>
+              
+        </div>
+        
+     
+            
+          </div>
+        </div>
+      </div>
+
+
+
+<div class="sidebar">
+<div id="sidebar">
+
+<div class="podobne">
+<h2 class="podobne-title">Podobné články</h2>
+<a class="podobne-item" href="{{ site.baseurl }}/vyhodynevyhody">
+Prezentace zařízení
+<br>
+<span class="podobne-item-author"> Lukáš konečný </span>
+</a>
+<a class="podobne-item" href="{{ site.baseurl }}/Clanek1-prezentace-zarizeni">
+Prezentace zařízení
+<br>
+<span class="podobne-item-author"> Ondřej Mitrník </span>
+</a>
+<a class="podobne-item" href="{{ site.baseurl }}/seznamtese">
+Seznamte se - tohle je virtuální realita
+<br>
+<span class="podobne-item-author"> Barča Fukárková </span>
+</a>
+
+</div>
+
+    </div>
+    </div>
+
+  <div id = "main">
+      
+         
+        <div class="row-main">
+        <div class="box-carousel">
+                      
+
+                 
+            <div class="textonas">
+                 <h1 id="logo2"> Virtuální realita a její dopady na lidskou psychiku</h1>
+               <h4> Autor: Barča Fukárková </h4> 
+                <p> 
+V tomto článku chci nejen varovat společnost o možných dopadech světa virtuální reality na naší psychiku, jako například rozvoj duševních poruch, ale také bych ráda poukázala na možné využití této metody v psychologii a psychiatrii k léčení například fobií. 
+                </p>
+                
+                <img src="{{ site.baseurl }}/images/vysky" alt="">
+                
+            <p> O těchto tématech, co se českých zdrojů týče, pojednávají například novější diplomové, bakalářské, disertační, habilitační a podobné práce, protože se zde virtuální realita dostává do podvědomí jako zajímavé a nepříliš prodiskutované téma, o kterém se dají poskytnout informace a vést výzkumy. Mimo to samozřejmě vzniká mnoho zahraničních článků, ale ty bych do tohoto tématu nedávala ráda, zůstala bych spíše na české půdě.  </p>
+
+                
+                
+
+                
+<p> Většina výzkumných prací nezpochybňuje radikální vliv kybernetického světa na psychiku, ba naopak vypovídá o tom, že vliv je obrovský, nicméně se právě snaží dokázat, že aspekt věci není pouze negativní, ale může do značné míry také přispět.
+</p>    
+                
+   <p> Jako příklad můžeme vzít behaviorální model léčby fobií na bázi analýzy Roberta Koopera z roku 1995. Byl vytvořen model proskleného výtahu v hotelu v zájmu léčení akrofobie – strachu z výšky. Model obsahoval nepřesnosti, nicméně účel splňoval a experiment byl proveden. Poté vědci exportovali osoby zpět do „naší“ reality a zpozorovali značné zlepšení, u většiny se snížil strach a byli schopni prožít tuto situaci na živo. Od té doby je virtuální realita často  používána za podobných situací, ale jsou stále generovány nové pokusy. 
+ </p> 
+                
+                <p> <b> Přikládám tématické video o léčení arachnofobie </b> </p>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/kUxIML47kFE" frameborder="0" allowfullscreen></iframe>
+                
+                
+  <p>Považuji však za nutné zmínit se i o horších případech a to zejména negativních vlivech. Ztráta pojmu o realitě je dnes poměrně velký strašák a toto tvrzení není zcela mimo mísu, zvláště pro osoby s emocionálním narušením psychickou poruchou, kybersvět ale může i zavinit jejich rozjezd. Jsou známé případy vášnivých hráčů her, kteří si neuvědomili hranici mezi světy a stříleli po lidech na ulici s domněním, že jsou stále například v GTA. Není to však to jediné – i zdravému uživateli hrozí ztráta originálního myšlení, chybné vnímání vlastní osoby nebo dokonce růst pocitů odcizení a obtížnějšího návrat do reálného světa, stírání hranic mezi vědomým reálným světem a světem virtuálním imponujícím a podobné dopady. 
+ </p>    
+                
+<p> V závěru asi nedojdeme k ničemu novému, jen je důležité si uvědomit, kde je hranice užívání virtuální reality, přesněji řečeno kdy pomáhá a kdy ničí životy. Budeme-li ji využívat příliš hojně, hrozí nám skutečně rizikové faktory, ale zároveň se díky ní můžeme zbavit otravných strachů z pavouků, výšek, sociální interakce a čehokoliv jiného. V léčbě tento obor představuje budoucnost a na to by se mělo přihlížet předně. Ostatně, stále neseme jako lidé, alespoň většina z nás, zodpovědnost sami za sebe a tak to nějakou dobu zůstane.   </p>
+
+<img src="{{ site.baseurl }}/images/dopady.jpg" alt="">
+                
+<h3> Použité zdroje </h3>
+ 
+     <p>      <li style="color: #0099FF">
+      <span style="color: #000"> 
+          
+          IVO ČERNÁK, MAREK NAVRÁTIL. cpppap.svsbb.sk. CENTRUM PEDAGOGICKO-PSYCHOLOGICKÉHO PORADENSTVA A PREVENCE. [online]. 1997 [cit. 2016-05-20]. Dostupné z: <i> http://www.cpppap.svsbb.sk/files/im_ost_vr.html#.Vz7hqhUaTIV </i> </p>
+          
+       <p>   <li style="color: #666699">
+      <span style="color: #000"> 
+          
+          Mgr. MILENA NOVÁKOVÁ. sancedetem.cz. Šance dětem. [online]. 3.2.2015 [cit. 2016-05-20]. Dostupné z: <i> http://www.sancedetem.cz/srv/www/content/pub/cs/clanky/jak-internet-ovlivnuje-zivot-deti-a-dospivajicich-145.html </i> </p>
+          
+               </span>
+          </li>
+
+            
+
+            
+ </div>					
+	
+</div> 	      
+               
+</div>
+
+     
+
+  <div id="horni-listap"> 
+<ul class="reset menu">
+<li class=""><a href="{{ site.baseurl }}/about">About</a></li> <li class="">
+<a href="{{ site.baseurl }}/default">Blog</a></li>
+    <li class=""><a href="{{ site.baseurl }}/Ondrej">Ondřej</a></li> <li class="">
+    <li class=""><a href="{{ site.baseurl }}/Barca">Barča</a></li> <li class="">
+    <li class=""><a href="{{ site.baseurl }}/Lukas">Lukáš</a></li> <li class="">
+  
+    </div>
+
+  
+
+
+</body>
+</html>
