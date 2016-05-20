@@ -1,0 +1,409 @@
+---
+layout: Clanek1-prezentace-zarizeni
+permalink: /seznamtese/
+---
+
+
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html lang="cs" class="ie7 no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="cs" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="cs" class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang = "cs" class = "no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+
+.sidebar{
+    position: absolute;         
+    right: 0;
+    top: 100px
+    }
+    
+    
+.sidebar div {
+    background: #fff; 
+        width: 350px;
+        height: 600px;
+   margin-right: 50px;
+    margin-top: 70px;
+    }
+    
+ .podobne {
+    counter-reset: podobne;
+    margin-bottom: 40px;
+}
+.podobne-item {
+    color: #000;
+    display: block;
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 20px 0;
+    min-height: 48px;
+    padding-left: 60px;
+    position: relative;
+    text-decoration: none;
+}
+.podobne-item-author {
+    color: #9f9f9f;
+    font-size: 13px;
+}
+.podobne-item::before {
+    border: 1px solid #e3e3e3;
+    border-radius: 100px;
+    color: #dbdbdb;
+    content: counter(podobne, decimal);
+    counter-increment: podobne;
+    font-size: 40px;
+    font-style: normal;
+    opacity: 
+    height: 48px;
+    left: 0;
+    line-height: 46px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 48px;
+}
+.podobne-item:hover::before {
+    background:   linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    border: none;
+    color: #fff;
+}   
+
+    
+
+    
+svg:not(:root) {
+    overflow: hidden;
+}
+embed, iframe, img, object {
+    vertical-align: left;
+}
+
+
+
+.reset > li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+
+body {
+    font: 400 16px/24px "Source Sans Pro",Arial,Helvetica,sans-serif;
+}
+caption, h1, h2, h3, h4, h5, h6 {
+    font-family: Danzza,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 1.5em 0 0.75em;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+ caption, h3 {
+    font-size: 16px;
+}
+h4, h5, h6 {
+    font-size: 14px;
+}
+
+hr {
+   
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    height: 1px;
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: color 1s ease 0s;
+}
+a:hover {
+    color: #898989;
+}
+ol, ul {
+    list-style: outside none none;
+    margin: 0 0 1.75em;
+    padding: 0;
+}
+
+
+    .row-main {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+
+
+
+
+#header .bg {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #dedede;
+    height: 59px;
+    overflow: hidden;
+    position: relative;
+    visibility: visible;
+}
+#logo {
+    font: 400 100%/1 "Source Sans Pro",Arial,Helvetica,sans-serif;
+    margin-top: 22px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+    
+    #logo2 {
+    font:"Source Sans Pro",Arial,Helvetica,sans-serif;
+        font-size: 30px;
+    margin-top: 22px;
+        margin-bottom: 82px;
+    position: relative;
+    text-align: center;
+}
+
+    
+
+
+#horni-listap .menu {
+    font-family: Danzza,sans-serif;
+    font-size: 14px;
+    left: 60px;
+    line-height: 57px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    z-index: 101;
+}
+#horni-listap .menu li {
+    float: left;
+}
+#horni-listap .menu a {
+    color: #000;
+    display: block;
+    padding: 2px 5px 0;
+    position: relative;
+    transition: background 0.2s ease 0s;
+}
+#horni-listap .menu a::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #0099FF 0px, #666699 100%) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 5px;
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+    transition: opacity 0.2s ease 0s;
+}
+
+#horni-listap .menu a.open::after, #horni-listap .menu a:hover::after {
+    opacity: 1;
+}
+
+
+
+#horni-listap .box {
+    background: #fff none repeat scroll 0 0;
+    font-size: 13px;
+    left: 0;
+    letter-spacing: 0.1em;
+    line-height: 19px;
+    opacity: 0;
+    padding: 20px 20px 5px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 0;
+    transition: opacity 0.5s ease 0s;
+}
+.ie8 #horni-listap .box {
+    display: none;
+}
+#horni-listap .box.open {
+    opacity: 1;
+    z-index: 10;
+}
+.ie8 #horni-listap .box.open {
+    display: block;
+}
+
+.textonas {
+   background: #fff none repeat scroll 0 0;
+    width:58%;
+    float: left;
+   font-style: monospace,serif;
+   margin-top: 40px;
+    margin-bottom: 20px ;
+    text-align: justify;
+  
+    
+  }
+
+    .zarovnanitextu-span
+    {text-align: left
+        }
+    
+    
+</style>
+</head>
+
+</head>
+
+  <div class="static-page-loader"></div>
+
+ 
+      <div id="header">
+          <div class="bg">
+  
+              <h1 id="logo">
+                Virtuální realita
+            </h1>
+              
+        </div>
+        
+     
+            
+          </div>
+        </div>
+      </div>
+
+
+
+<div class="sidebar">
+<div id="sidebar">
+
+<div class="podobne">
+<h2 class="podobne-title">Podobné články</h2>
+<a class="podobne-item" href="...">
+Playstation a X-box
+<br>
+<span class="podobne-item-author"> Ondřej Mitrík </span>
+</a>
+<a class="podobne-item" href="">
+Nahlédnutí do minulosti
+<br>
+<span class="podobne-item-author"> Lukáš Konečný </span>
+</a>
+<a class="podobne-item" href="">
+Nahlédnutí do budoucnosti
+<br>
+<span class="podobne-item-author"> Barča Fukárková </span>
+</a>
+
+</div>
+
+    </div>
+    </div>
+
+  <div id = "main">
+      
+         
+        <div class="row-main">
+        <div class="box-carousel">
+                      
+
+                 
+            <div class="textonas">
+                 <h1 id="logo2"> Seznamte se - tohle je virtuální realita </h1> 
+                               <h4> Autor: Barča Fukárková </h4> 
+
+                <p> Jako vždy to chce u seznámení se s novým tématem začít nějakou jednoznačnou, stručnou a výstižnou definicí, která uspokojí pragmatiky a 
+                    neurazí filozofy. Virtuální realita vystupuje jako značně komplexní téma dnešní epochy a každým dnem se vyvíjí, svým způsobem představuje 
+                    budoucnost. Většinová společnost si pod tímto slovním spojením vybaví spíše zařízení ve stylu Google glass a jiné „složitosti“, počítačové hry,
+                    budoucnost, ve které budeme všichni chodit s podivnými brýlemi na nose, nebo lidi, kteří se zmítají mimo realitu. Málokoho napadne její služba veřejnosti
+                    a celková praktická využitelnost. Pojďme se podívat na definici ze stránky, na kterou bychom pravděpodobně skočili jako první, pokud bychom si chtěli zajistit
+                    víceméně relevantní informace o tomto oboru.</p>
+                    
+                    	<img src="{{ site.baseurl }}/images/uvodnifoto.jpg" alt=""> 
+
+                
+                <p> <b>  „Virtuální realita je technologie umožňující uživateli interagovat se simulovaným prostředím." </b>
+                </p>
+            <p> Značně abstraktní, že? Beztak se nám vybaví brýle, nicméně jako základ nejspíš dobré.  Osobně bych definici pozměnila zhruba takto: 
+                Virtuální realita je technologie, která nás může sblížit s jinak nedotknutelným. Tím jsem v podstatě zobecnila předchozí definici, což však není zcela od věci.
+                Slovo „prostředí“ je dle mého názoru v tomto případě příliš zavazující. Prostředí se právě vztahuje spíše na hry, pod tímto pojmem si vybavíme něco, do čeho můžeme
+                vstoupit a už už se vidíme ve hře, ale tak to nutně být nemusí, což je potřeba míti na vědomí. Například v lékařství se pomocí virtuální reality dají vytvářet 3D modely
+                s pohledem dovnitř, což dokazuje, že můžeme v podstatě jen pasivně pozorovat. </p>
+                
+	<img src="{{ site.baseurl }}/images/medicine.jpg" alt=""> 
+
+                
+                
+<p> Ani má definice není přesná, vlastně spíše naopak, ale zase dávám více prostoru k přemýšlení, což je u komplexních témat nutné. Musíme si však uvědomit i část s „ nedotknutelností“ 
+    – samozřejmě můžeme do virtuální reality promítnout každodenní nákup ovoce v jakémkoliv obchodním řetězci, ale to pravděpodobně nebude příliš žádané téma (vynechme momentálně různé
+    sociologické výzkumy, pro které může být tato možnost naopak nedocenitelná). Lidé spíše budou chtít navštívit a zažít něco nevšedního, jako například chůzi po měsíci, protože možnost
+    chodit po měsíci pravděpodobně nikdy mít nebudou. 
+                </p>
+                <p> Nejspíše bych Vás zde neměla balamutit s filosofickým aspektem tak technologického komplexu, na druhou stranu o praktických přístupech do hloubky pojednávají jiné 
+                    články na našem blogu a takhle bych Vás mohla alespoň motivovat k jejich přečtení, protože po můj spekulativní příspěvek by mohl vzbudit více podpovrchového interesu 
+                    o praktický pohled a kdybych Vám zde začala vypisovat, co si máte pořídit domů, abyste každý večer před spaním mohli do vesmíru, nebo na dno oceánu, nemuseli byste
+                    ostatní články vůbec navštěvovat a zůstali byste velice ochuzení o nové čtenářské i vědomostní zážitky. </p>
+                
+            <p> Tak vzhůru do toho! </p>
+                
+            
+
+                <h3> Použité zdroje </h3>
+                
+                <div class="zarovnanitextu-span"> 
+                
+<p>  <li style="color: #666699">
+      <span style="color: #000"> 
+                   
+wikipedia.org [online]. 16. 5. 2016 [cit. 2016-05-18]. Dostupné z: https://cs.wikipedia.org/wiki/Virtu%C3%A1ln%C3%AD_realita </p> 
+
+          
+          </span>
+    </li>
+  </ul>
+
+                </p>   
+                
+                
+          
+            
+ </div>					
+	
+</div> 	      
+               
+</div>
+
+     
+
+  <div id="horni-listap"> 
+<ul class="reset menu">
+<li class=""><a href="{{ site.baseurl }}/about">About</a></li> <li class="">
+<a href="{{ site.baseurl }}/default">Blog</a></li>
+    <li class=""><a href="{{ site.baseurl }}/Ondrej">Ondřej</a></li> <li class="">
+    <li class=""><a href="{{ site.baseurl }}/Barca">Barča</a></li> <li class="">
+    <li class=""><a href="{{ site.baseurl }}/Lukas">Lukáš</a></li> <li class="">
+  
+    </div>
+
+  
+
+
+</body>
+</html>
