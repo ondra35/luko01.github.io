@@ -292,20 +292,21 @@ ol, ul {
 
 <div class="podobne">
 <h2 class="podobne-title">Podobné články</h2>
-<a class="podobne-item" href="...">
-Playstation a X-box
-<br>
-<span class="podobne-item-author"> Ondřej Mitrík </span>
+ <a class="podobne-item" href="{{ site.baseurl }}/tematickavidea">
+Tematická videa a komentáře 
+ <br>
+ <span class="podobne-item-author"> Lukáš Konečný </span>
+ 
 </a>
-<a class="podobne-item" href="...">
-Nahlédnutí do minulosti
-<br>
-<span class="podobne-item-author"> Lukáš Konečný </span>
+<a class="podobne-item" href="{{ site.baseurl }}/seznamtese">
+ Seznamte se - tohle je virtuální realita
+ <br>
+ <span class="podobne-item-author"> Barča Fukárková </span>
 </a>
-<a class="podobne-item" href="...">
-Nahlédnutí do budoucnosti
-<br>
-<span class="podobne-item-author"> Barča Fukárková </span>
+ <a class="podobne-item" href="{{ site.baseurl }}/xbox">
+Playstation a Xbox
+ <br>
+ <span class="podobne-item-author"> Ondřej Mitrík </span>
 </a>
 
 </div>
